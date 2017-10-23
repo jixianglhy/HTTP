@@ -1,1 +1,1 @@
-web: gunicorn mysite.wsgi --log-file -
+web: mod_wsgi-express start-server --application-type module mysite.wsgi --log-file -
