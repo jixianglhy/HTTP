@@ -3,7 +3,8 @@ url = "https://git.heroku.com/lehttptest.git"
 verify_ssl = true
 
 [packages]
+django = "*"
 
 
 [requires]
-python_version = "3.6"
+python_version = "3.6.2"
