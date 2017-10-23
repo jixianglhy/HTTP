@@ -1,0 +1,16 @@
+[[source]]
+url = "https://git.heroku.com/lehttptest.git"
+verify_ssl = true
+
+[packages]
+django = "*"
+pymongo = "*"
+datetime = "*"
+re = "*"
+time = "*"
+bson = "*"
+requests = "*"
+
+
+[requires]
+python_version = "3.5"
