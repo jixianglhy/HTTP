@@ -1,0 +1,22 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "c48e4947852b09e706177c0432ea536fe7d0f5f293afef2d4e592035f736121f"
+        },
+        "requires": {
+            "python_version": "3.5"
+        },
+        "sources": [
+            {
+                "url": "https://git.heroku.com/lehttptest.git",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "django": {
+            "version": "==1.11.4"
+        },
+    },
+    "develop": {}
+}
