@@ -1,0 +1,82 @@
+﻿<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+<style type="text/css">
+body {background-color:grayss,font-family:微软雅黑}
+p {color:blue}
+</style>
+
+<title>HTTP必报字段验证</title>
+
+<meta name="author" content="李海英">
+
+<!-- <meta http-equiv="refresh" content="10"> -->
+</head>
+<body>
+<h1>HTTP必报字段验证：</h1>
+<hr>
+<p>以下信息需要您来提供：</p>
+<a href="http://dq.lebi.letv.cn/dq/2fk1/" target="_blank">查看提测平台的数据</a>
+<form action="/result/" method="get">
+    <fieldset>
+	功能集：<input type="text" name="gongnengji" value={{db_name}}><hr>
+
+	开始时间：<input type="text" name="begintime" value='2017-01-01 00:00:00'>
+	结束时间：<input type="text" name="endtime" value='2018-01-01 00:00:00'><hr>
+	AUID：<input type="text" name="auid" value={{auid}}><hr>
+  P1: <input type="text" name="p1" value={{p1}}>
+	P2: <input type="text" name="p2" value={{p2}}>
+	P3: <input type="text" name="p3" value={{p3}}>
+  app(版本号): <input type="text" name="app" value={{app}}>
+  app_name(唯一标识): <input type="text" name="app_name" value={{app_name}}><hr>
+  请输入端类型（TV/Mobile/HTML）：<input type="text" name="duan" value={{duan}}>
+  请输入平台类型（Android/IOS/其他): <input type="text" name="os" value={{os}}><hr>
+  是乐视视频移动端？（y/n）：<input type="text" name="leshishipingmobile" value={{leshishipingmobile}}>
+  是乐视视频android端？(y/n): <input type="text" name="leshishipingandroid" value={{leshishipingandroid}}><hr>
+  有轮播的点播内容？(y/n): <input type="text" name="lunbodianbo" value={{lunbodianbo}}>
+  有轮播的直播内容？(y/n): <input type="text" name="lunbozhibo" value={{lunbozhibo}}><hr>
+  是否使用cde？(y/n): <input type="text" name="cde" value={{cde}}><hr>
+<!--
+	<form>
+	请选择端：
+	<input type="radio" name="leixing" value="mobile">Mobile
+	<input type="radio" name="leixing" value="tv">TV
+	<input type="radio" name="leixing" value="web">基于Web<br><hr>
+	</form>
+	<form>
+	请选择平台：
+	<input type="radio" name="pingtai" value="android">Android
+	<input type="radio" name="pingtai" value="ios">IOS<br><hr>
+	</form>
+	<form>
+	乐视视频请选择：
+	<input type="radio" name="leshishiping" value="android">乐视视频Android端
+	<input type="radio" name="leshishiping" value="mobile">乐视视频移动端<br><hr>
+	</form>
+-->
+</fieldset>
+<!--
+    <input type="submit" value="验证op接口必测字段" style="width:200px;height:45px">
+-->
+	<input type="submit" value="验证env接口必测字段" name="env" style="width:200px;height:45px">
+  <input type="submit" value="验证lg接口必字段" name="lg" style="width:200px;height:45px">
+  <input type="submit" value="验证op接口必字段" name="op" style="width:200px;height:45px"><br><br>
+	<input type="submit" value="验证play接口必测字段" name="pl" style="width:200px;height:45px">
+	<input type="submit" value="验证er接口必测字段" name="er" style="width:200px;height:45px">
+	<input type="submit" value="验证pgv接口必测字段" name="pgv" style="width:200px;height:45px">
+	<input type="submit" value="验证qy接口必测字段" name="qy" style="width:200px;height:45px">
+
+
+  </form>
+	<textarea name= 'output' rows="30" cols="100" contenteditable="false">
+	{{message}}
+	{{message1}}
+  {{message2}}
+	</textarea>
+
+
+</body>
+</html>

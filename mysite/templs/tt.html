@@ -1,0 +1,45 @@
+﻿<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+<style type="text/css">
+body {background-color:grayss,font-family:微软雅黑}
+p {color:blue}
+</style>
+
+<title>HTTP必报字段验证</title>
+
+<meta name="author" content="李海英">
+
+<!-- <meta http-equiv="refresh" content="10"> -->
+</head>
+<body>
+<h1>HTTP必报字段验证：</h1>
+<hr>
+<p>以下信息需要您来提供：</p>
+<a href="http://dq.lebi.letv.cn/dq/2fk1/" target="_blank">查看提测平台的数据</a>
+
+    <form action="/trans/" method="get">
+    <fieldset>
+
+
+	开始时间：<input type="text" name="begintime" value='2017-01-01 00:00:00'>
+	结束时间：<input type="text" name="endtime" value='2018-01-01 00:00:00'><hr>
+
+
+</fieldset>
+
+	<input type="submit" value="transfer" style="width:200px;height:45px">
+
+
+    </form>
+	<textarea name= 'output' rows="10" cols="100">
+	{{begintime}}
+	{{endtime}}
+	</textarea>
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+'''
+        shangbaolist = ('apprunid','os','auid','lc','bd','br','cs','android_id','idfa','im','imsi','mac','wmac','model','pcode','serialno','src','uuid',
+        'xh','install_id')
+        for each in shangbaolist:
+            exist_searchdict = total_searchdict.copy()
+            kong_searchdict = total_searchdict.copy()
+            message += '\n'
+            message = shangbao(each,message,total_number,exist_searchdict,kong_searchdict,total_searchdict,collection_useraction)
+'''
